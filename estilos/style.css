@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: droidao;
+    src: url(../fontes/idroid.otf);
+    format: (opentype);
+    font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { /* Aqui pode-se criar variáveis globaisr */
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+  }
+  
+/* COMO O GUSTAVO GUANABARA CONFIGURA (ORGANIZAÇÃO)
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  background-color: var(--cor0);
+  font-family: var(--fonte-padrao);
+}
+
+header {
+  background-color: var(--cor4);
+}
+
+header > h1 {
+  color: white;
+  font-family: var(--fonte-destaque);
+}
+
+header > p {
+  color: white;
+}
+
+main h1 {
+  color: var(--cor5);
+  font-family: var(--fonte-android);
+}
+
+main h2 {
+  font-family: var(--fonte-android);
+}
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to bottom, var(--cor0), var(--cor4));
+    margin-top: 0px;
+    padding-top: 0;
+    top: 0px;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 40px;    
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.534);
+    padding-top: 26px;
+}
+
+h1#h1principal {
+    margin-top: 0;
+}
+
+ul#ulnav {
+    padding-left: 20px;
+}
+
+p#ph1 {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.534);
+}
+
+li.linav {
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+li.linav:hover {
+    background-color: #2ba264 ;
+    color: #0b5e24;
+    text-shadow: none;
+    background-position: left;
+    margin-bottom: 1px;
+    border-radius: 5px;
+}
+
+li.linav:not(:hover) {
+    transition-delay: 0.08s; /* Atraso na saída da animação */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84e1ad;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+section#sec1 {
+    padding: 8px 14px 14px 14px;
+}
+
+.green {
+    font-weight: bold;
+    color: #126232;
+}
+
+.background {
+    background-color: #84e1ad;
+    padding: 1px;
+}
+
+a.link:visited {
+    color: #126232;
+}
+
+h2.droid {
+    font-family: droidao;
+    font-size: 24px;
+    color: #126232;
+}
+
+p {
+    text-indent: 24px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+h3.droid {
+    font-family: droidao;
+    font-size: 20px;
+    background: linear-gradient(to right,#84e1ad, white);
+}
+
+p#solo {
+    text-align: center;
+    text-indent: 0px !important;
+}
+
+section#sec2 {
+    padding: 8px 14px 14px 14px;
+}
+
+section#sec3 {
+    padding: 8px 0px 14px 0px;
+}
+
+div#unica {/* background-color: #1a5c38;
+    width: 100%px;
+    height: 100%;
+    padding-left: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px; */
+    background-color: #1a5c38;
+    margin: 0px 0px 30px 0px;
+    padding: 20px 0px 20px 40px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div#unica > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #c5ebd6;
+    margin: 0px 20px 20px 20px;
+    border-radius: 20px;    
+    padding-bottom: 14px;
+}
+
+h4 {
+    padding: 12px 14px 14px 24px;
+    background-color: #2fa866;
+    border-radius: 20px 20px 0px 0px;
+}
+
+p.ph4 {
+    padding: 6px 14px 6px 14px;
+}
+
+nav {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+ul.custom-list { /* Aqui só o columns: 2; funcionaria */
+    
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+ul.custom-list li {
+    position: relative;
+    padding-left: 30px;
+    text-decoration: underline;
+}
+r
+ul.custom-list li::before {
+    content: "";
+    background: url(check.svg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li {
+    text-align: left;
+    padding: 10px 20px 5px 0px;
+    margin: 0px;
+}
+
+p#solo2 {
+    padding: 8px 14px 14px 14px;
+}
+
+footer {
+    background-color: #1a5c38;
+}
+
+p#pfooter {
+    text-align: center;
+    color: white;
+    padding: 14px 14px 10px 14px;
+    margin: 0px;
+}
+
+
