@@ -231,7 +231,6 @@ nav {
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.534);
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
 }
 
 ul.custom-list { /* Aqui só o columns: 2; funcionaria */
